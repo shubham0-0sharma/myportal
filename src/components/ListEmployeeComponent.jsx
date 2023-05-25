@@ -22,7 +22,7 @@ function ListEmployeeComponent() {
 
     const deleteEmployee = (empId) => {
         EmployeeService.deleteEmployee(empId).then((res) => {
-            setEmployess({employess: employess.filter((emp) => emp.id !== empId)})
+            setEmployess(employess.filter((emp) => emp.id !== empId))
             });
         };
 
